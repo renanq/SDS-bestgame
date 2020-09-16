@@ -17,7 +17,7 @@ const Home = () => {
                 </h3>
                 <div className="home-actions">
                     <button className="home-btn">
-                        SAIBA MAIS
+                        ACESSE E CONFIRA
                     </button>
                     <div className="home-btn-icon">
                         <Arrow />
