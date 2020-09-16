@@ -1,4 +1,4 @@
-# BIG GAME SURVEY
+# BEST GAME SURVEY
 
 Desenvolvido por [Renan Queiroz](https://www.rqweb.com.br) | [renan@rqweb.com.br](mailto:renan@rqweb.com.br)
 
