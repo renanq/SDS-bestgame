@@ -8,7 +8,7 @@ const Header = () => {
             <Logo />
             <div className="logo-text">
                 <span className="logo-text-1">
-                    Big Game
+                    Best Game
                 </span>
                 &nbsp;
                 <span className="logo-text-2">
