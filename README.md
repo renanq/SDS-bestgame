@@ -22,7 +22,7 @@ O Front-End é dividido em uma Aplicação WEB e um aplicativo Mobile:
 
 ### WEB
 
-A parte WEB tem por objetivo mostrar informações sobre quais jogos os "gamers" mais gostam. Os dados dessas preferências são coletados através do aplicativo mobile e os resultados são disponibilizados na aplicação WEB. Essas informações são listadas de forma paginada, ainda podem ser filtradas por data, além de ter uma opção de exibição de gráficos (dashboard) exibindo os jogos, plataformas e gêneros mais votados.
+A parte WEB é uma SPA(Single Page Application) desenvolvida em [ReactJS](https://reactjs.org/), utilizando [TypeScript](https://www.typescriptlang.org/). A aplicação tem por objetivo mostrar informações sobre quais jogos os "gamers" mais gostam. Os dados dessas preferências são coletados através do aplicativo mobile e os resultados são disponibilizados na aplicação WEB. Essas informações são listadas de forma paginada, ainda podem ser filtradas por data, além de ter uma opção de exibição de gráficos (dashboard) exibindo os jogos, plataformas e gêneros mais votados.
 
 ### Mobile 
 
