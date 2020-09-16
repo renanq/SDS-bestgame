@@ -5,6 +5,11 @@
     background-color: var(--color-darkslategray);
   }
   
+  .main-header a {
+    display: flex;
+    flex-direction: row;
+  }
+
   .logo-text {
     font-weight: bold;
     font-size: 24px;
