@@ -52,3 +52,49 @@
   .filters-container .action-filters:hover {
     background-color: #04c7ef;
   }
+
+  .filters-container a {
+    width: 100%;
+    max-width: 250px;
+    height: 54px;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));*/
+    background-color: var(--color-turquoise);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FFF;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  
+    margin-top: 16px;
+    margin-right: 8px;
+    
+    transition: background-color 0.4s ease-out;
+  }
+
+  .filters-container a:hover {
+    /*background-image: linear-gradient(var(--color-coral), var(--color-coraldark));*/
+    background-color: var(--color-coral);    
+  }
+
+  .filters-container a span {
+    display: block;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters-container a strong {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
