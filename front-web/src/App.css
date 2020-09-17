@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
-  --color-turquoise: #00D4FF;
-  --color-coral: #ed7947;
+  --color-turquoise: #0066ff;
+  --color-coral: #ff0066;
+  --color-coraldark: #a80449;
   --color-dimgray: #4c5d67;
   --color-darkslategray: #37474f;
-  --color-black: #0b1f34;
+  --color-black: #011b46;
+  --color-darkblue: #0d3cb4;
 }
 
 body, html {
@@ -18,7 +20,8 @@ body, html {
 }
 
 body {
-  background: var(--color-black);
+  background: linear-gradient(#000, var(--color-black)), var(--color-black);
+  background-repeat: no-repeat;
 }
 
 a {
