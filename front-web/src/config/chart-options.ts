@@ -47,7 +47,7 @@ export const pieOptions = {
         horizontal: true,
         endingShape: "rounded",
         startingShape: "rounded",
-        barHeight: "60px",
+        barHeight: "24px",
       },
     },
     dataLabels: {
