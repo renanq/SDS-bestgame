@@ -22,6 +22,7 @@ body, html {
 body {
   background: linear-gradient(#000, var(--color-black)), var(--color-black);
   background-repeat: no-repeat;
+  background-position: 0 50px;
 }
 
 a {
