@@ -3,6 +3,12 @@
     display: flex;
     justify-content: center;
   }
+
+  .home-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
   
   .home-text {
     width: 490px;
