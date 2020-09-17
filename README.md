@@ -4,6 +4,8 @@ Desenvolvido por [Renan Queiroz](https://www.rqweb.com.br) | [renan@rqweb.com.br
 
 Aplicação para Pesquisa de Preferência de Jogos, criada no evento Semana Dev Superior 1.0 (de 14 a 20 de setembro de 2020), da [Dev Superior](https://devsuperior.com.br/). 
 
+![](/assets/img-intro-web.png)
+
 
 ## Back-End
 
