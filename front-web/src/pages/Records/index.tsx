@@ -10,7 +10,7 @@ const Records = () => {
 
     const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
     const [activePage, setActivePerPage] = useState(0);
-    const [linesPerPage, setLinesPerPage] = useState(12);
+    const linesPerPage = 12;
 
     //chamando a api para recuperar as informações
     useEffect(() => {
