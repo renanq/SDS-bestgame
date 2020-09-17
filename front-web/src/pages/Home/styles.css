@@ -11,40 +11,59 @@
   
   .home-text-title {
     font-size: 55px;
-    color: var(--color-turquoise);
+    color: #FFF;
   }
   
   .home-text-subtitle {
     font-size: 24px;
     color: var(--color-coral);
+    margin-bottom: 48px;
   }
-  
-  .home-actions {
-    display: flex;
-    height: 70px;
-    margin-top: 150px;
-  }
-  
-  .home-btn {
+
+  .home-text a {
+    width: 100%;
+    max-width: 250px;
+    height: 54px;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));*/
     background-color: var(--color-turquoise);
-    border-radius: 10px 0px 0px 10px;
-    color: var(--color-black);
-    font-weight: bold;
-    font-size: 24px;
-    padding: 20px 45px;
-  }
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FFF;
   
-  .home-btn:hover {
-    background-color: #04c7ef;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
   
-  .home-btn-icon {
-    border-radius: 0px 10px 10px 0px;
-    width: 70px;
-    background-color: var(--color-coral);
+    margin-top: 16px;
+    margin-right: 8px;
+    
+    transition: background-color 0.4s ease-out;
+  }
+
+  .home-text a:hover {
+    /*background-image: linear-gradient(var(--color-coral), var(--color-coraldark));*/
+    background-color: var(--color-coral);    
+  }
+
+  .home-text a span {
+    display: block;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    width: 54px;
+    height: 54px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .home-text a strong {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
   }
   
   /* responsive */
@@ -74,25 +93,11 @@
       width: 410px;
       margin-right: 20px;
     }
-  
-    .home-btn {
-      font-size: 18px;
-      padding: 10px 25px;
-    }
-  
-    .home-actions {
-      margin-top: 50px;
-    }
   }
   
   @media (max-width: 850px) {
     .home-container {
       margin-top: 50px;
-    }
-  
-    .home-actions {
-      height: 50px;
-      justify-content: center;
     }
   
     .home-image {

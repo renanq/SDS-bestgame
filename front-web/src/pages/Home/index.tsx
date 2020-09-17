@@ -17,15 +17,14 @@ const Home = () => {
                     jogos mais votados pelos gamers.
                 </h3>
                 <Link to="/records">
-                    <div className="home-actions">
-                        <button className="home-btn">
-                            ACESSE E CONFIRA
-                        </button>
-                        <div className="home-btn-icon">
-                            <Arrow />
-                        </div>
-                    </div>
+                    <strong>
+                        ACESSE E CONFIRA
+                    </strong>
+                    <span>
+                        <Arrow />
+                    </span>
                 </Link>
+
             </div>
             <Gamer className="home-image"/>
         </div>
