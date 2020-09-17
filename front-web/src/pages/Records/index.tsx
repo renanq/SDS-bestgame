@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { RecordsResponse } from './types';
 import { formatDate } from '../../utils/formatDate';
 import Pagination from '../../components/Pagination';
 import api from '../../services/api';
 import './styles.css';
+import Filters from '../../components/Filters';
 
 const Records = () => {
 
@@ -26,13 +26,7 @@ const Records = () => {
 
     return (
         <div className="page-container">
-            <div className="filters-container records-actions">
-                <Link to="/charts">
-                    <button className="action-filters">
-                        Ver Gráfico
-                    </button>
-                </Link>
-            </div>
+            <Filters link="/charts" linkText="VER GRÁFICO"/>
             <table className="records-table">
                 <thead>
                     <tr>
