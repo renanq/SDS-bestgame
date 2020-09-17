@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="main-header">
             <Link to="/">
-                <Logo />
+                <Logo className="logotipo" />
                 <div className="logo-text">
                     <span className="logo-text-1">
                         Best Game

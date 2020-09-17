@@ -5,6 +5,10 @@
     background: #000;
     /*var(--color-darkslategray);*/
   }
+
+  .main-header .logotipo {
+    height: 30px;
+  }
   
   .main-header a {
     display: flex;
