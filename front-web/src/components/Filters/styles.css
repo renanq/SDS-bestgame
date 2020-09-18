@@ -11,13 +11,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid green;
   }
 
   .filters-container .form-items {
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
     align-items: flex-end;
   }
 
@@ -70,7 +68,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   }
 
   .filters-container button span svg {

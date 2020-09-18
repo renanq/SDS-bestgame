@@ -30,7 +30,7 @@
   }
 
   .records-table a.active {
-    color: var(--color-coraldark);
+    color: var(--color-coral);
   }
 
   .records-table td, th {
