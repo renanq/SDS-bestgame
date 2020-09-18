@@ -12,6 +12,27 @@
     border-spacing: 0;
   }
 
+  .records-table a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  .records-table a svg{
+    height: 18px;
+    padding-right: 5px;
+  }
+
+  .records-table a:hover {
+    color: var(--color-black);
+  }
+
+  .records-table a.active {
+    color: var(--color-coraldark);
+  }
+
   .records-table td, th {
     padding: 0;
   }

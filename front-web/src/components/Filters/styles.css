@@ -1,5 +1,5 @@
 .filters-container {
-    background-color: var(--color-darkslategray);
+    background-color: var(--color-lightblue);
     display: flex;
     justify-content: space-between;
     padding: 13px 15px;
@@ -7,10 +7,29 @@
     border-radius: 10px;
   }
 
-  .filters-container.records-actions {
+  .filters-container .records-actions {
+    display: flex;
     justify-content: flex-end;
+    align-items: center;
+    border: 1px solid green;
   }
-  
+
+  .filters-container .form-items {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    align-items: flex-end;
+  }
+
+  .filters-container .form-items .input-block {
+    display:  flex;
+    flex-direction: column;
+  }
+
+  .filters-container .form-items .input-block label {
+    font-weight: bold;
+  }
+
   .filters-container input {
     height: 44px;
     font-weight: bold;
@@ -28,10 +47,36 @@
   }
   
   .filters-container button {
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 13px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    height: 44px;
+    width: 44px;
+    border: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: var(--color-turquoise);
+    transition: background-color 0.3s ease-out;
+  }
+
+  .filters-container button:hover {
+    background-color: var(--color-coral); 
+  }
+
+  .filters-container button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  }
+
+  .filters-container button span svg {
+    height: 18px;
+    width: 18px;
+    color: #FFF;
   }
   
   .filters-container .clean-filters {
@@ -56,7 +101,7 @@
   .filters-container a {
     width: 100%;
     max-width: 250px;
-    height: 54px;
+    height: 100%;
     /*background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));*/
     background-color: var(--color-turquoise);
     border-radius: 8px;
@@ -68,9 +113,6 @@
     justify-content: space-between;
     overflow: hidden;
   
-    margin-top: 16px;
-    margin-right: 8px;
-    
     transition: background-color 0.4s ease-out;
   }
 
@@ -83,18 +125,25 @@
     display: block;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
     width: 54px;
-    height: 54px;
+    height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  .filters-container a span svg {
+    height: 24px;
+    width: 24px;
+  }
+
   .filters-container a strong {
     background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
-    height: 54px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
+    padding-right: 12px;
+    padding-left: 12px;
   }
