@@ -3,6 +3,9 @@ import React from 'react';
 import { AppLoading } from 'expo';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, Play_400Regular, Play_700Bold } from '@expo-google-fonts/play';
+import Header from './src/components/Header';
+import Home from './src/pages/Home';
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -14,19 +17,11 @@ export default function App() {
     return <AppLoading />
   } else {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <StatusBar style="auto" />
+      <View style={{flex: 1}}>
+        <StatusBar style="light" />
+        <Header />
+        <Home />
       </View> 
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
