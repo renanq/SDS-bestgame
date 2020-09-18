@@ -14,3 +14,5 @@ export type RecordItem = {
 };
 
 export type Platform = 'XBOX' | 'PC' | 'PLAYSTATION';
+
+export type Direction = 'ASC' | 'DESC';
