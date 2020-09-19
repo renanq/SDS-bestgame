@@ -19,9 +19,10 @@ const styles = StyleSheet.create({
           },
         inputText: {
           height: 50,
+          width: '100%',
           backgroundColor: '#FFF',
           borderRadius: 10,
-          color: '#ED7947',
+          color: '#ff0066',
           fontFamily: "Play_700Bold",
           fontSize: 16,
           paddingLeft: 20,
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
         },
         platformContainer: {
           marginBottom: 20,
+          width: '100%',
           flexDirection: 'row',
           justifyContent: 'space-between',
         },
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
           alignItems: 'center',
         },
         button: {
-          backgroundColor: '#00D4FF',
+          backgroundColor: '#0066ff',
           flexDirection: 'row',
           borderRadius: 10,
           height: 60,
