@@ -1,10 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { AppLoading } from 'expo';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import { useFonts, Play_400Regular, Play_700Bold } from '@expo-google-fonts/play';
-import Header from './src/components/Header';
-import Home from './src/pages/Home';
+import Routes from './src/routes';
 
 
 export default function App() {
@@ -19,8 +18,7 @@ export default function App() {
     return (
       <View style={{flex: 1}}>
         <StatusBar style="light" />
-        <Header />
-        <Home />
+        <Routes />
       </View> 
     );
   }
