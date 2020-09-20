@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useEffect, useState } from 'react';
-import { Text, View, TextInput, TextInputChangeEventData, NativeSyntheticEvent, PickerItemProps} from  'react-native';
+import React, { useEffect, useState } from 'react';
+import { Text, View, TextInput} from  'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import RNPickerSelect from 'react-native-picker-select';
 import { FontAwesome5 as Icon } from '@expo/vector-icons';
@@ -9,6 +9,8 @@ import Header from '../../components/Header';
 import pickerStyles from './pickerStyles';
 import styles from './styles';
 import { Game, GamePlatform } from '../../components/PlatformCard/types';
+import { RectButton } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 interface Item {
     label: string,
@@ -17,8 +19,11 @@ interface Item {
 
 const CreateRecord = () => {
 
+    const navigation = useNavigation();
+
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
+    const [message, setMessage] = useState('');
     const [platform, setPlatform] = useState<GamePlatform>();
     const [selectedGame, setSelectedGame] = useState('');
     const [games, setGames] = useState<Game[]>([]);
@@ -53,6 +58,28 @@ const CreateRecord = () => {
         });
         setFilteredGames(auxGames);
     };
+
+    const handleSubmit = async () => {
+        const formData = {
+            name,
+            age,
+            gameId: selectedGame,
+        };
+
+        await api.post('records', formData)
+        .catch(err => {
+            setMessage("Ocorreu um erro inesperado, tente novamente mais tarde,");
+            alert(message);
+        })
+        .then(response => {
+            setMessage("Obrigado pela participação!");
+            setName(""),
+            setAge(""),
+            setPlatform(undefined);
+            setFilteredGames([]);
+            navigation.navigate('Feedback');
+        });     
+    }
 
     return (
         <>
@@ -116,6 +143,29 @@ const CreateRecord = () => {
                         );
                     }}
                 />
+                
+                <View style={styles.footer}>
+                    <RectButton 
+                        style={styles.button}
+                        onPress={handleSubmit}
+                    >
+           
+                     <LinearGradient
+                            // Background Linear Gradient
+                            colors={['transparent', 'rgba(0,0,0,0.5)']}
+                            style={styles.containerBackground}
+                        />
+                        <Text style={styles.buttonText}>SALVAR</Text>
+                        <View style={styles.buttonIcon} >
+                            <LinearGradient
+                                // Background Linear Gradient
+                                colors={['transparent', 'rgba(0,0,0,0.5)']}
+                                style={styles.containerBackground}
+                            />
+                            <Icon name="chevron-right" color="#FFF" size={25} />
+                        </View>
+                    </RectButton>
+                </View>
             </View>
         </>
     );

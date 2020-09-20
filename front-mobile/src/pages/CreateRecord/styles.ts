@@ -41,17 +41,25 @@ const styles = StyleSheet.create({
         button: {
           backgroundColor: '#0066ff',
           flexDirection: 'row',
-          borderRadius: 10,
-          height: 60,
-          width: '100%',
+          borderRadius: 10
+        },
+        buttonIcon: {
+          backgroundColor: '#0050c7',
+          justifyContent: 'center',
           alignItems: 'center',
-          justifyContent: 'center'
+          width: 50,
+          borderBottomRightRadius: 10,
+          borderTopRightRadius: 10
         },
         buttonText: {
+          paddingTop: 15,
+          paddingBottom: 15,
+          paddingLeft: 50,
+          paddingRight: 50,
           fontFamily: "Play_700Bold",
           fontWeight: 'bold',
           fontSize: 18,
-          color: '#0B1F34',
+          color: '#FFFFFF',
         }
     });
 
