@@ -47,7 +47,7 @@ const Charts = () => {
 
     return (
         <div className="page-container">
-            <Filters link="/records" linkText="VER LISTA"/>
+            <Filters link="/records" linkText="VER LISTA" filterDate={() => null}/>
             <div className="chart-container">
                 <div className="top-related">
                     <h1 className="top-related-title">
