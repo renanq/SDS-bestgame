@@ -24,7 +24,11 @@ O Front-End é dividido em uma Aplicação WEB e um aplicativo Mobile:
 
 ### WEB
 
-A parte WEB é uma SPA(Single Page Application) desenvolvida em [ReactJS](https://reactjs.org/), utilizando [TypeScript](https://www.typescriptlang.org/). A aplicação tem por objetivo mostrar informações sobre quais jogos os "gamers" mais gostam. Os dados dessas preferências são coletados através do aplicativo mobile e os resultados são disponibilizados na aplicação WEB. Essas informações são listadas de forma paginada, ainda podem ser filtradas por data, além de ter uma opção de exibição de gráficos (dashboard) exibindo os jogos, plataformas e gêneros mais votados.
+A parte WEB é uma SPA(Single Page Application) desenvolvida em [ReactJS](https://reactjs.org/), utilizando [TypeScript](https://www.typescriptlang.org/). A aplicação tem por objetivo coletar e mostrar informações sobre quais jogos os "gamers" mais gostam. Os dados dessas preferências ficam armazenadas no Banco de Dados. 
+
+Na página de resultados, as informações são listadas de forma paginada, ainda podem ser filtradas por data, além de ter uma opção de exibição de gráficos (dashboard) exibindo os jogos, plataformas e gêneros mais votados.
+
+Na página para votação os gamers preenchem seus dados e selecionam o seu jogo preferido a partir da respectiva plataforma. As informações de plataforma e jogos também estão armazenadas no Banco de Dados.
 
 Acesse a aplicação WEB que está publicada no endereço [https://bestgamesurvey.netlify.app/] (https://bestgamesurvey.netlify.app/).
 
