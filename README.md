@@ -38,6 +38,8 @@ Acesse a aplicação WEB que está publicada no endereço [https://bestgamesurve
 
 ![](/assets/img-web-03.png)
 
+![](/assets/img-web-04.png)
+
 ### Mobile 
 
 No Aplicativo Mobile, os "gamers" podem votar nos jogos que mais gostam. O "gamer" cadastra seu nome e idade, seleciona a plataforma que mais gosta, seu jogo preferido e a aplicação armazena essas informações em Banco de Dados.
