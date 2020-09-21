@@ -26,6 +26,16 @@
     margin-bottom: 48px;
   }
 
+  .home-text .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .home-text a:first-of-type {
+    margin-right: 24px;
+  }
+
   .home-text a {
     width: 100%;
     max-width: 250px;

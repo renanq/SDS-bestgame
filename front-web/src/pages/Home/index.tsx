@@ -13,19 +13,30 @@ const Home = () => {
                     Quais os jogos que a galera mais curte?
                 </h1>
                 <h3 className="home-text-subtitle">
-                    Clique no botão abaixo e saiba quais são os 
+                    Vote no seu jogo preferido e saiba quais são os 
                     jogos mais votados pelos gamers.
                 </h3>
-                <Link to="/records">
-                    <strong>
-                        ACESSE E CONFIRA
-                    </strong>
-                    <span>
-                        <Arrow />
-                    </span>
-                </Link>
 
-            </div>
+                <div className="button-container">
+                    <Link to="/vote">
+                        <strong>
+                            PARTICIPE
+                        </strong>
+                        <span>
+                            <Arrow />
+                        </span>
+                    </Link> 
+
+                    <Link to="/records">
+                        <strong>
+                            RESULTADOS
+                        </strong>
+                        <span>
+                            <Arrow />
+                        </span>
+                    </Link>
+                    </div>
+                </div>
             <Gamer className="home-image"/>
         </div>
     );
