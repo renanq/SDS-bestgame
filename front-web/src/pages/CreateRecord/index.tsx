@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import api from '../../services/api';
 import { Platform } from '../Records/types';
@@ -11,6 +12,8 @@ interface Game {
   };
 
 const CreateRecord = () => {
+
+    const history = useHistory();
 
     const [selectedPlatform, setSelectedPlatform] = useState<Platform>();
     const [selectedGame, setSelectedGame] = useState("");
@@ -40,10 +43,11 @@ const CreateRecord = () => {
         setSelectedGame("");
         setFilteredGames([]);
         let auxGames: Game[] = [];
-        games.map((game) => {
+        games.map(game => {
             if (game.platform === value) {
                 auxGames.push(game);
             };
+            return null;
         });
         setFilteredGames(auxGames);
     };
@@ -59,10 +63,12 @@ const CreateRecord = () => {
         await api.post("records", formData)
             .catch(err => {
                 //erro
+                alert("Erro inesperado. Tente novamente mais tarde.");
             })
             .then(response => {
                 //success
-                alert("success");
+                alert("Obrigado pela sua participação!");
+                history.push('/');
             });
     };
 
@@ -77,6 +83,7 @@ const CreateRecord = () => {
                     name="name"
                     id="name"
                     onChange={handleInputChange}
+                    value={formData.name}
                     />
                 </div>
 
@@ -87,6 +94,7 @@ const CreateRecord = () => {
                     name="age"
                     id="age"
                     onChange={handleInputChange}
+                    value={formData.age}
                     />
                 </div>
 
